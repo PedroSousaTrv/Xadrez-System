@@ -1,7 +1,5 @@
 package boardGame;
 
-import java.security.PublicKey;
-
 public abstract class Piece {
 
     protected Position position;
@@ -23,10 +21,10 @@ public abstract class Piece {
     }
 
     public boolean isThereAnyPossibleMoves(){
-        boolean[][] matx = possibleMoves();
-        for (int i=0; i<matx.length; i++){
-            for (int j=0; j< matx.length; j++){
-                if(matx[i][j]){
+        boolean[][] mat = possibleMoves();
+        for (int i = 0; i< mat.length; i++){
+            for (int j = 0; j< mat.length; j++){
+                if(mat[i][j]){
                     return true;
                 }
             }

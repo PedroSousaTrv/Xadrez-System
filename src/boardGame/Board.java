@@ -60,18 +60,18 @@ public class Board {
 
     }
 
-    public Boolean positionExist(int row, int column) {
+    public boolean  positionExist(int row, int column) {
         return row >= 0 && row < rows && column >= 0 && column < columns;
 
     }
 
 
-    public Boolean positionExist(Position position) {
+    public boolean  positionExist(Position position) {
         return positionExist(position.getRow(), position.getColumn());
 
     }
 
-    public Boolean thereIsAPiece(Position position){
+    public boolean  thereIsAPiece(Position position){
         if(!positionExist(position)){
             throw new BoardException("Position not on the board.");
         }
