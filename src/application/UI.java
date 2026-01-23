@@ -50,7 +50,7 @@ public class UI {
             throw new InputMismatchException("Error reading ChessPosition");
         }
 
-        }
+    }
 
     public static void printMatch(ChessMatch chessMatch,List<ChessPiece> captured){
         printBoard(chessMatch.getPieces());
