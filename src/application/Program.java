@@ -48,7 +48,7 @@ public class Program {
 
                     while ((!type.equals("B") && !type.equals("N") && !type.equals("R") && !type.equals("Q"))){
                         System.out.println("Enter piece for promotion: (B/N/R/Q): ");
-                        type = sc.nextLine().toUpperCase();
+                            type = sc.nextLine().toUpperCase();
                     }
 
                     chessMatch.replacePromotedPiece(type);
